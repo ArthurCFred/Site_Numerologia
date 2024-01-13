@@ -76,7 +76,7 @@ section .container {
     width: 500px;
     height: 300px;
     object-fit: cover;
-    image-rendering: auto;
+    image-rendering:inherit;
 }
 
 section .container {
@@ -129,6 +129,7 @@ form button {
     width: 320px;
     margin-bottom: 8px;
     padding: 8px;
+    border-radius: 25px;
 }
 
 form textarea {
@@ -161,8 +162,9 @@ footer {
 }
 
 .container .image img {
+    align-items: center;
     display: flex;
-    width: 400px;
+    width: 250px;
     height: 300px;
     object-fit: cover;
     image-rendering: auto;
