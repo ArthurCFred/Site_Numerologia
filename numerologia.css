@@ -114,7 +114,9 @@ section p {
 }
 
 #contact .container {
-    display: block;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .contact-methods {
@@ -175,35 +177,31 @@ img {
     padding: 8px;
 }
 
-@media screen and (max-width: 768px){
-    #about .container,
-    #forecast .container,
-    #quem .container,
-    #contact .container {
-        display: block;
-        width:100%;
-        flex-direction: column;
-        margin: 2em 2em;
-        text-align: center;
-        word-wrap: break-word
-    }
+@media screen and (max-width: 700px) {
 
-    .container .image img {
-        width: 50vw;
-        word-wrap: break-word
-    }
+.container, 
+#contact .container form,
+#contact .container .contact-methods,
+#contact .container .social-links{
+    display: flex;
+    flex-direction: column; 
+    font-size: 14px; 
+    word-wrap: break-word;
+    align-items: center;
+    }  
+}
 
-    #contact .container {
-        display: flex;
-        flex-direction: column;
-        width:auto ;
-    }
-
-    #contact .container form,
-    #contact .container .contact-methods,
-    #contact .container .social-links{
-        display: flex;
-        flex-direction: column;
-        width:auto;
+@media screen and (max-width: 400px) {
+    
+.container, 
+#contact .container form,
+#contact .container .contact-methods,
+#contact .container .social-links{
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    width: auto;
+    word-wrap: break-word;
+    align-items: center;    
     }
 }
