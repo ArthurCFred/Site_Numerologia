@@ -73,8 +73,8 @@ section .container {
 }
 
 #about img {
-    width: 500px;
-    height: 300px;
+    width: 35em;
+    height: 25em;
     object-fit: cover;
     image-rendering:inherit;
 }
@@ -164,8 +164,8 @@ footer {
 .container .image img {
     align-items: center;
     display: flex;
-    width: 250px;
-    height: 300px;
+    width: 35em;
+    height: 25em;
     object-fit: cover;
     image-rendering: auto;
 }
