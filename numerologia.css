@@ -492,10 +492,20 @@ footer {
         text-align: center;
     }
 
+    .image,
+    .image1,
+    .image2 {
+        text-align: center;
+        width: 100%;
+    }
+
     /* Adiciona margens e justificação aos elementos <p> */
     p {
         margin: 10px 8px;
         text-align: justify;
+    }
+    #contact .container .contact-methods h3 {
+        font-size: 18px;
     }
     .slider {
     position: none;
