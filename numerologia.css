@@ -516,10 +516,12 @@ footer {
     }
     .slider {
     position: none;
-    margin-bottom: 600px;
+    margin-bottom: auto;
+    display: block;
 }
 
 .slider .slides .slide {
-    margin-bottom: 600px;
+    margin-bottom: auto;
+
 }
 }
