@@ -500,6 +500,10 @@ footer {
     }
 
     /* Adiciona margens e justificação aos elementos <p> */
+    body {
+        width: 100%;
+    }
+    
     p {
         margin: 10px 8px;
         text-align: justify;
