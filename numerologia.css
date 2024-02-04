@@ -516,5 +516,11 @@ footer {
     }
     .slider {
     position: none;
+    margin-bottom: 150px;
+}
+
+.slider .slides .slide {
+    margin-bottom: auto;
+
 }
 }
