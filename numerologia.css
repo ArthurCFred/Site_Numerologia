@@ -1,19 +1,24 @@
- * {
+/* Define estilos padrão para todos os elementos */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Define estilos para todas as seções */
 section {
-    margin: 2em 2em;
     word-wrap: break-word;
 }
 
-body ,
+/* Define estilos para o corpo e rodapé */
+body,
 footer {
-    background: radial-gradient(rgb(50, 188, 243),purple, blue)
+    background: radial-gradient(rgb(50, 188, 243), purple, blue);
+    color: #ecf0f1;
+    font-family: 'Tektur', sans-serif;
 }
 
+/* Cabeçalho (Header) */
 h1 {
     font-family: 'Rubik Glitch', system-ui;
     font-weight: normal;
@@ -27,36 +32,53 @@ h1 {
     width: 75px;
     height: 75px;
     text-align: left;
-
 }
 
+/* Estilos específicos para a seção "Sobre" */
 #about h1 {
     text-align: center;
     font-weight: normal;
     font-size: 75px;
+    margin-bottom: 20px;
+}
+
+#about .image1 {
+    margin-top: 20px;
 }
 
 h2 {
     font-family: 'Kalnia', serif;
     color: rgb(251, 249, 249);
 }
+
+/* Define estilos para títulos e botões em formulários */
 section h3,
 form button {
     font-family: 'Tektur', sans-serif;
     font-weight: normal;
 }
 
-body, input, textarea {
+#quem h2 {
+    text-align: center;
+    margin-top: 20px; /* Ajuste conforme necessário para centralizar verticalmente */
+    margin-bottom: 20px; /* Adicione uma margem inferior para espaçamento */
+}
+
+/* Define estilos para fontes em todo o corpo e formulários */
+body,
+input,
+textarea {
     font-family: 'Tektur', sans-serif;
 }
 
+/* Cabeçalho (Header) */
 header {
     padding: 16px 0;
-    background-color: rgba(150, 10, 160, 0.373);  
+    background-color: rgba(150, 10, 160, 0.373);
     color: #ffffff;
 }
 
-header nav li{
+header nav li {
     display: inline;
     margin-left: 16px;
     font-size: 18px;
@@ -68,6 +90,7 @@ header nav li a {
     text-decoration: none;
 }
 
+/* Define estilos para os contêineres */
 .container {
     max-width: 1280px;
     width: 100%;
@@ -75,6 +98,7 @@ header nav li a {
     word-wrap: break-word;
 }
 
+/* Define estilos para contêineres dentro do cabeçalho e seções */
 header .container,
 section .container {
     display: flex;
@@ -82,13 +106,29 @@ section .container {
     justify-content: space-between;
 }
 
+/* Titulo do Slider --> feedback */
+#feedback {
+    flex-direction: column;
+    margin-top: 0; /* Adicione uma margem na parte superior da seção "Feedback" */
+    margin-bottom: 0; /* Adicione uma margem na parte inferior da seção "Feedback" */
+    display: flex;
+    justify-content: center; /* Centraliza a seção horizontalmente */
+    align-items: center; /* Centraliza a seção verticalmente */
+}
+
+/* Slider */
 .slider {
-    width: 800px;
+    align-items: center;
+    width: 350px;
     height: 500px;
     overflow: hidden;
     position: absolute;
+    margin-top: 50px;
+    left: 50%; /* Move o slider para a metade da largura da tela */
+    transform: translateX(-50%); /* Centraliza o slider horizontalmente */
 }
 
+/* Define estilos para a barra de navegação do slider */
 .navigation-bar {
     position: absolute;
     bottom: 20px;
@@ -97,10 +137,12 @@ section .container {
     transform: translate(-50%);
 }
 
+/* Esconde os botões de rádio */
 input {
     display: none;
 }
 
+/* Define estilos para botões manuais do slider */
 .manual-btn {
     border: 2px solid #fff;
     padding: 10px;
@@ -117,10 +159,11 @@ input {
     transition: 0.4s;
 }
 
+/* Define estilos para slides no slider */
 .slides {
     display: flex;
     width: 400%;
-    height: 100%
+    height: 100%;
 }
 
 .slide {
@@ -133,10 +176,10 @@ input {
     height: 100%;
 }
 
+/* Define estilos para o checkbox do slider e os slides correspondentes */
 #radio1:checked ~ .first {
     margin-left: 0;
 }
-
 
 #radio2:checked ~ .first{
     margin-left: -25%;
@@ -150,30 +193,17 @@ input {
     margin-left: -75%;
 }
 
+/* Define estilos para seções */
 section .container {
     align-items: flex-start;
 }
 
-section {
-    padding: 24px 0;
-}
-
-section h2 {
-    margin-bottom: 16px;
-}
-
-section {
-    color: #ffffff;
-}
-
-section p {
-    margin-bottom: 8px;
-}
-
+/* Seção "Contato" */
 #contact h2  {
     text-align: center;
 }
 
+/* Define estilos para links de redes sociais na seção "Contato" */
 #contact .social-links img {
     height: 40px;
     mix-blend-mode: multiply;
@@ -189,12 +219,40 @@ section p {
     text-decoration: none;
 }
 
+/* Define estilos para contêineres na seção "Contato" */
+/* Ajuste as margens conforme necessário para obter um espaçamento uniforme */
+#about .container {
+    margin-bottom: 20px; /* Adicione uma margem na parte inferior da seção "Sobre" */
+}
+
+#forecast .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px; /* Adicione uma margem na parte superior da seção "Previsão" */
+    margin-bottom: 20px; /* Adicione uma margem na parte inferior da seção "Previsão" */
+}
+
+#quem .container {
+    margin-top: 600px; /* Adicione uma margem na parte superior da seção "Quem sou eu?" */
+    margin-bottom: 20px; /* Adicione uma margem na parte inferior da seção "Quem sou eu?" */
+}
+
+#contact .container {
+    margin-top: 20px; /* Adicione uma margem na parte superior da seção "Contato" */
+}
+
+/* Adicione uma margem no rodapé para separar do conteúdo anterior */
+footer {
+    margin-top: 20px;
+}
+
+
 #contact .container {
     display: flex;
     flex-direction: column;
 }
 
-
+/* Define estilos para os métodos de contato na seção "Contato" */
 .contact-methods {
     display: flex;
     flex: 1;
@@ -207,7 +265,8 @@ section p {
     margin: 0 10px;
 }
 
-form  input,
+/* Define estilos para formulários na seção "Contato" */
+form input,
 form textarea,
 form button {
     display: block;
@@ -227,7 +286,7 @@ section h3 {
 }
 
 form button {
-    background-color: rgba(150, 10, 160, 0.373);;
+    background-color: rgba(150, 10, 160, 0.373);
     color: #ecf0f1;
     border: none;
     cursor: pointer;
@@ -241,26 +300,35 @@ button:focus, textarea:focus {
     outline-color: #182c61;
 }
 
-#contact .container h2, #contact .container h3 {
+/* Define estilos para títulos na seção "Contato" */
+#contact .container h2,
+#contact .container h3 {
     align-items: center;
 } 
 
+.titulo_contact article h2 {
+    text-align: center;
+    justify-content: center;
+}
+
+/* Rodapé */
 footer {
     color: #ecf0f1;
     padding: 16px 0;
 }
 
-.image, .image1, .image2 {
+/* Define estilos para imagens nas seções "Sobre" e "Quem Sou Eu?" */
+.image,
+.image1,
+.image2 {
     align-items: center;
     display: flex;
     width: 35em;
     height: 25em;
     object-fit: cover;
     image-rendering: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin:20px 0;
     border-radius: 2%;
-
 }
 
 .image3 {
@@ -269,32 +337,141 @@ footer {
     border-radius: 10%;
 }
 
+/* Media Query para telas médias */
+@media screen and (max-width: 1024px) {
+    header nav li {
+        font-size: 14px;
+        margin-left: 10px;
+    }
 
+    header {
+        padding: 12px 0;
+    }
 
+    #about h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
 
-@media screen and (max-width: 700px) {
-section #about .container,
-#contact .container form,
-#contact .container .contact-methods,
-#contact .container .social-links{
-    display: flex;
-    flex-direction: column; 
-    font-size: 14px; 
-    word-wrap: break-word;
-    align-items: center;
-    }  
+    #about .image1 {
+        margin-top: 10px;
+    }
 }
 
-@media screen and (max-width: 400px) {
-section #about .container, 
-#contact .container form,
-#contact .container .contact-methods,
-#contact .container .social-links{
-    display: flex;
-    flex-direction: column;
-    font-size: 10px;
-    width: auto;
-    word-wrap: break-word;
-    align-items: center;    
+/* Media Query para telas pequenas */
+@media screen and (max-width: 768px) {
+    header .container,
+    section .container {
+        flex-direction: column;
+    }
+
+    header nav li {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    #about h1 {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+
+    #about .image1 {
+        margin-top: 5px;
+    }
+
+    section h1,
+    section h2,
+    section h3 {
+        text-align: center;
+    }
+
+    /* Adiciona margens e justificação aos elementos <p> */
+    p {
+        margin: 10px 8px;
+        text-align:justify;
+    }
+
+    section #about .container,
+    #contact .container form,
+    #contact .container .contact-methods,
+    #contact .container .social-links {
+        display: flex;
+        flex-direction: column; 
+        font-size: 14px; 
+        align-items: center;
+    } 
+}
+
+/* Media Query para telas muito pequenas (por exemplo, smartphones em modo retrato) */
+@media screen and (max-width: 480px) {
+    header nav li {
+        font-size: 10px;
+        margin-left: 3px;
+    }
+
+    header {
+        padding: 8px 0;
+    }
+
+    #about h1 {
+        font-size: 20px;
+        margin-bottom: 3px;
+    }
+
+    #about .image1 {
+        margin-top: 3px;
+    }
+
+    #forecast .container {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #quem .container {
+        margin-top: 200px;
+        margin-bottom: 5px;
+        flex-direction: column;
+    }
+
+    section h1,
+    section h2,
+    section h3 {
+        text-align: center;
+    }
+
+    /* Adiciona margens e justificação aos elementos <p> */
+    p {
+        margin: 10px 8px;
+        text-align: justify;
+    }
+    #contact .container h2.titulo_contact{
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        display: flex;
+    }
+
+    #contact .container {text-align: center;
+        justify-content: center;
+        margin: auto;
+        display: flex;}
+
+    section #about .container, 
+    #contact .container form,
+    #contact .container .contact-methods,
+    #contact .container .social-links {
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+        align-items: center;    
+    }
+
+    img .image3 {
+        text-align: center;
+        justify-content: center;
     }
 }
