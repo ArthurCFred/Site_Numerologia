@@ -475,3 +475,29 @@ footer {
         justify-content: center;
     }
 }
+
+/* Media Query para dispositivos com tela de 6.8 polegadas */
+/*@media screen and (max-width: 414px) {
+    body {
+        font-size: 14px; 
+    }
+    
+}*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    section h1,
+    section h2,
+    section h3 {
+        text-align: center;
+    }
+
+    /* Adiciona margens e justificação aos elementos <p> */
+    p {
+        margin: 10px 8px;
+        text-align: justify;
+    }
+    .slider {
+    position: none;
+}
+}
