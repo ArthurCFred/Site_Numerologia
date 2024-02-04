@@ -486,10 +486,6 @@ footer {
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-    header h1{
-        font-size: auto;
-    }
-
     section h1,
     section h2,
     section h3 {
@@ -520,11 +516,11 @@ footer {
     }
     .slider {
     position: none;
-    margin-bottom: auto;
+    margin-bottom: 150px;
 }
 
 .slider .slides .slide {
-    margin-bottom: auto;
+    margin-bottom: 150px;
 
 }
 }
