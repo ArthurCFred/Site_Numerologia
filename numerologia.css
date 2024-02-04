@@ -514,8 +514,7 @@ footer {
     }
     .slider {
     position: none;
-    flex-direction: column;
-    display: flex;
+
 }
 
     #quem .container{
