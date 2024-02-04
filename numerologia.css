@@ -514,7 +514,12 @@ footer {
     #contact .container .contact-methods h3 {
         font-size: 18px;
     }
-    #feedback {
-        margin-bottom: 600px;
-    }
+    .slider {
+    position: none;
+    margin-bottom: 600px;
+}
+
+.slider .slides .slide {
+    margin-bottom: 600px;
+}
 }
