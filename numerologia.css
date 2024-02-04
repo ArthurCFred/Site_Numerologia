@@ -486,7 +486,7 @@ footer {
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-
+    section h1,
     section h2,
     section h3 {
         text-align: center;
@@ -502,7 +502,9 @@ footer {
     /* Adiciona margens e justificação aos elementos <p> */
     body {
         width: 100%;
+        margin: 0 4px;
         flex-direction: column;
+
     }
     
     p {
@@ -514,10 +516,5 @@ footer {
     }
     .slider {
     position: none;
-
 }
-
-    #quem .container{
-        margin-top: 200px;
-    }
 }
