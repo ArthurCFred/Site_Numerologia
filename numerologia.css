@@ -502,8 +502,6 @@ footer {
     /* Adiciona margens e justificação aos elementos <p> */
     body {
         width: 100%;
-        margin: 0 4px;
-        flex-direction: column;
 
     }
     
